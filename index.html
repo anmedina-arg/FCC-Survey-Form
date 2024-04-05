@@ -1,0 +1,59 @@
+<!DOCTYPE html/>
+<html>
+  <head>
+    <title>Survey form</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <!--copiar CSS desde: https://survey-form.freecodecamp.rocks/ -->
+  </head>
+  <body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    <form id='survey-form'>
+      <fieldset>
+        <label for='name' id='name-label'>
+          Name
+          <input id='name' type='text' required placeholder='Enter your name'>
+        </label>
+        <label for='email' id='email-label'>
+          Email
+          <input id='email' type='email' required placeholder='Enter your email'/>
+        </label>
+        <label for='number' id='number-label'>
+          Age (optional)
+          <input id='number' type='number' min='13' max='120' pattern='[0-9]' placeholder='Enter your age'/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for='dropdown'>
+          Which option best describes your current role?
+          <select id='dropdown'>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <span>Would you recommend freeCodeCamp to a friend?</span>
+        <label for='definitely'>
+          <input id='definitely' type='radio' name='recomendation' class='inline' value='definitely'/>Definitely
+        </label>
+        <label for='maybe'>
+          <input id='maybe' type='radio' name='recomendation' class='inline' value='maybe'/>Maybe
+        </label>
+        <label for='notsure'>
+          <input id='notsure' type='radio' name='recomendation' class='inline' value='notsure'/>Not sure
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for='fe-checkbox'><input id='fe-checkbox' type='checkbox' value='1' class='inline'/>Front-end Projects</label>
+        <label for='be-checbox'><input id='be-checbox' type='checkbox' value='2' class='inline'/>Back-end Projects</label>
+        <label for='data-checkbox'><input id='data-checkbox' type='checkbox' value='3' class='inline'/>Data Visualization</label>
+        <label for='challenge-checkbox'><input id='challenge-checkbox' type='checkbox' value='4' class='inline'/>Challenges</label>
+      </fieldset>
+      <fieldset>
+        <textarea></textarea>
+      </fieldest>
+      <input id='submit' type='submit' value='Submit'/>
+    </form>
+  </body>
+</html>
